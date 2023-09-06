@@ -22,7 +22,7 @@ def count(num):
         print(f'{number}')
     return retval
 
-@app.route('/math/<float:num1>/<string:operation>/<float:num2>')
+@app.route('/math/<int:num1>/<string:operation>/<int:num2>')
 def math(num1, operation, num2):
     operations = {
         '+': lambda x, y: x + y,
